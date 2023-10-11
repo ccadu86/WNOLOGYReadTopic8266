@@ -2,16 +2,16 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
-const char* ssid = "esp";                        // SSID da sua rede Wi-Fi
-const char* password = "teste32esp";             // Senha da sua rede Wi-Fi
+const char* ssid = "";                        // SSID da sua rede Wi-Fi
+const char* password = "";             // Senha da sua rede Wi-Fi
 
 //////////////////////////////////////////////////////////////////////////////////
 const char* broker = "broker.app.wnology.io";     // Endereço do broker MQTT
 const int port = 1883;                            // Porta do broker MQTT
-const char* accessKey = "cae34e03-ed98-470a-b18d-095efddcdade";     // Chave de acesso ao broker MQTT
-const char* accessSecret = "adab8d113f9b29b9614756f4f946e4cc4d0bbf61f90a0b8438e1b58d7187f4d8";  // Segredo de acesso ao broker MQTT
-const char* topic = "wnology/64947c24ce6b4c71f6c8369a/state";         // Tópico MQTT a ser assinado
-const char* clientID = "64947c24ce6b4c71f6c8369a";     // MQTT Client ID
+const char* accessKey = "";     // Chave de acesso ao broker MQTT
+const char* accessSecret = "";  // Segredo de acesso ao broker MQTT
+const char* topic = "wnology//state";         // Tópico MQTT a ser assinado
+const char* clientID = "";     // MQTT Client ID
 
 WiFiClient wifiClient;              // Cliente WiFi
 PubSubClient mqttClient(wifiClient); // Cliente MQTT
